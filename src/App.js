@@ -1,33 +1,48 @@
-import React from "react";
+import React, { Component } from "react";
 import AboutMe from "./components/AboutMe";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Navbar from "./components/NavBar";
+import Section from "./components/Section";
+import boilerText from "./BoilerText";
 
-export default function App() {
-  return (
-    <Router>
-      <div className="nav-links">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Me</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/about" component={AboutMe}></Route>
-        </Switch>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar />
+        <Section
+          title="Hi, I'm Nicky"
+          subtitle={boilerText}
+          dark={true}
+          id="section1"
+        />
+        <Section
+          title="Section 2"
+          subtitle={boilerText}
+          dark={false}
+          id="section2"
+        />
+        <Section
+          title="Section 3"
+          subtitle={boilerText}
+          dark={true}
+          id="section3"
+        />
+        <Section
+          title="Section 4"
+          subtitle={boilerText}
+          dark={false}
+          id="section4"
+        />
+        <Section
+          title="Section 5"
+          subtitle={boilerText}
+          dark={true}
+          id="section5"
+        />
       </div>
-    </Router>
-  );
+    );
+  }
 }
+
+export default App;
