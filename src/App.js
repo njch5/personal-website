@@ -5,7 +5,7 @@ import Section from "./components/Section";
 import boilerText from "./BoilerText";
 import AboutMe from "./AboutMe";
 import Timeline from "./components/Timeline";
-
+// https://stackabuse.com/deploying-a-node-js-app-to-heroku/
 class App extends Component {
   render() {
     return (
@@ -29,10 +29,10 @@ class App extends Component {
           dark={true}
           id="section3"
         />
-        <Section title="Timeline" dark={false} id="section4" />
+        <Section title="Timeline" dark={false} id="timeline" />
         <Timeline />
         <Section
-          title="Section 5"
+          title="Contact Me"
           subtitle={boilerText}
           dark={true}
           id="section5"

@@ -57,7 +57,7 @@ export default class Navbar extends Component {
             <li className="nav-item">
               <Link
                 activeClass="active"
-                to="section4"
+                to="timeline"
                 spy={true}
                 smooth={true}
                 offset={-70}
@@ -75,7 +75,7 @@ export default class Navbar extends Component {
                 offset={-70}
                 duration={500}
               >
-                Section 5
+                Contact Me
               </Link>
             </li>
           </ul>
