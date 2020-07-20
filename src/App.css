@@ -11,6 +11,10 @@
   box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
+.App {
+  text-align: center;
+}
+
 .nav-logo {
   height: 60px;
   width: 60px;
@@ -56,4 +60,21 @@
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
+}
+
+.ada-tag {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.ada-tag:visited {
+  text-decoration: none;
+}
+
+.portrait-img {
+  width: 40%;
+}
+
+.timeline-div {
+  background-color: rgb(229, 237, 245);
 }

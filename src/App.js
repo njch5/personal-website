@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import AboutMe from "./components/AboutMe";
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Section from "./components/Section";
 import boilerText from "./BoilerText";
+import AboutMe from "./AboutMe";
+import Timeline from "./components/Timeline";
 
 class App extends Component {
   render() {
@@ -11,8 +12,8 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Section
-          title="Hi, I'm Nicky"
-          subtitle={boilerText}
+          title="Hi, I'm Nicky ✨"
+          subtitle={AboutMe}
           dark={true}
           id="section1"
         />
@@ -28,12 +29,8 @@ class App extends Component {
           dark={true}
           id="section3"
         />
-        <Section
-          title="Section 4"
-          subtitle={boilerText}
-          dark={false}
-          id="section4"
-        />
+        <Section title="Timeline" dark={false} id="section4" />
+        <Timeline />
         <Section
           title="Section 5"
           subtitle={boilerText}
